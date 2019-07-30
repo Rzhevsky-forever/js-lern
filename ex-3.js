@@ -32,3 +32,26 @@ for (var i = 0; i < listLength; i++)
     console.log(count + ' ' + positions[i]);
     count++;
 }
+
+// Задача 2
+var newPositions = [
+  'Экзоскелет Trooper-111',
+  'Нейроинтерфейс игровой SEGUN',
+  'Семена дерева Эйва'
+];
+
+var resultPositions = positions;
+var newPositionsLength = newPositions.length;
+for(var i = 0; i < newPositionsLength; i++)
+{
+  resultPositions.push(newPositions[i]);
+}
+
+var count = 1;
+var resultPositionsLength = resultPositions.length;
+console.log('Окончательный список наименований');
+for(var i = 0; i < resultPositionsLength; i++)
+{
+  console.log(count + ' ' + resultPositions[i]);
+  count++;
+}
