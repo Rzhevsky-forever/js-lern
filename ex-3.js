@@ -55,3 +55,14 @@ for(var i = 0; i < resultPositionsLength; i++)
   console.log(count + ' ' + resultPositions[i]);
   count++;
 }
+
+// Задача 3
+for (var i = 0; i < resultPositionsLength; i++)
+{
+  if(resultPositions[i] == 'Машина времени DeLorean')
+  {
+    var orderNumber = i;
+    break;
+  }
+}
+console.log(resultPositions.splice(orderNumber));
