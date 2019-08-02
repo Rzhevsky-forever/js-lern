@@ -61,8 +61,20 @@ for (var i = 0; i < resultPositionsLength; i++)
 {
   if(resultPositions[i] == 'Машина времени DeLorean')
   {
-    var orderNumber = i;
+    var preOrder = resultPositions.splice(i, 1);
+    resultPositions.unshift(preOrder[0]);
     break;
   }
 }
-console.log(resultPositions.splice(orderNumber));
+
+console.log('Принять в первую очередь');
+
+for(var i = 0; i < resultPositionsLength; i++)
+{
+  if(i < 3)
+  {
+    console.log(resultPositions[i]);
+  }
+}
+
+console.log(resultPositions.length);
