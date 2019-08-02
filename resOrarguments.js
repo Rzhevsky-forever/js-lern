@@ -13,3 +13,5 @@ function summ(...rest)
 }
 
 console.log(summ(1, 2, 3));
+
+// Вебинар Функции 50 : 55
