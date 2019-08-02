@@ -15,3 +15,10 @@ function summ(...rest)
 console.log(summ(1, 2, 3));
 
 // Вебинар Функции 50 : 55
+
+console.log(summ);
+
+var funck = summ;
+
+funck(10, 20);
+console.log(funck(100, 50));
