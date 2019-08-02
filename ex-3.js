@@ -1,17 +1,5 @@
 'use strict';
 
-var star = '*';
-star = star++;
-console.log(star); // NAN
-
-var star = '*';
-star += star;
-console.log(star); // **
-
-var star = '*';
-star += star;
-console.log(star); // **
-
 // Задача 1
 var positions = [
     'Отвертка ультразвуковая WHO-D',
@@ -25,6 +13,7 @@ var positions = [
   ]
 
 var listLength = positions.length;
+// console.log('');
 console.log('Список наименований');
 var count = 1;
 for (var i = 0; i < listLength; i++)
@@ -49,6 +38,7 @@ for(var i = 0; i < newPositionsLength; i++)
 
 var count = 1;
 var resultPositionsLength = resultPositions.length;
+console.log('');
 console.log('Окончательный список наименований');
 for(var i = 0; i < resultPositionsLength; i++)
 {
@@ -67,14 +57,34 @@ for (var i = 0; i < resultPositionsLength; i++)
   }
 }
 
+console.log('');
 console.log('Принять в первую очередь');
 
 for(var i = 0; i < resultPositionsLength; i++)
 {
   if(i < 3)
   {
-    console.log(resultPositions[i]);
+    console.log('  -' + resultPositions[i]);
   }
 }
 
-console.log(resultPositions.length);
+// Задача 4
+var shopItems = resultPositions.slice(0, 5);
+
+console.log('');
+console.log('В магазине :');
+var shopItemslength = shopItems.length;
+for(i = 0; i < shopItemslength; i++)
+{
+  console.log('  -' + shopItems[i]);
+}
+
+console.log('');
+console.log('Остальные товары :');
+for(i = 0; i < resultPositionsLength; i++)
+{
+  if (i >= shopItemslength)
+  {
+    console.log('  -' + resultPositions[i]);
+  }
+}
