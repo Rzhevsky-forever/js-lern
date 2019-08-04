@@ -69,7 +69,7 @@ for(var i = 0; i < resultPositionsLength; i++)
 }
 
 // Задача 4
-var shopItems = resultPositions.slice(0, 5);
+var shopItems = resultPositions.slice(0, 5); //
 
 console.log('');
 console.log('В магазине :');
